@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url('/static/images/background.jpg'); /* Use url() function */
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5 for 50% darkness) */
+    z-index: -1;
+}
+
+/* Apply a blur effect to the background image */
+body::after {
+    content: "";
+    background-image: url('/static/images/background.jpg');
+    background-size: cover;
+    filter: blur(10px); /* Adjust the blur intensity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+
+/* Center align the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Style the header */
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Style the form */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the file input and submit button */
+input[type="file"] {
+    border: 2px solid #04aa6d;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Style the image */
+.img-thumbnail {
+    border: 2px solid #04aa6d;
+    border-radius: 5px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Style the disease name and probabilities */
+h4 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+mark {
+    background-color: #04aa6d;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Add a box shadow to the image container */
+.border-primary {
+    border: 2px solid #04aa6d;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hello {
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.height {
+    text-align: center;
+}
