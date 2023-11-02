@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rice Leaf Disases </title>
 </head>
 <body>
@@ -15,14 +16,13 @@
     </div>
    <div class="col-lg-12">
       <center><form  class="form-inline" action = "/predict" method = "post" enctype="multipart/form-data">
-          <input type="file" name="file"/><br>
-          <input type = "submit" class="btn btn-success" value="Predict">
+        <a href="/" class="btn btn-lg btn-success"><i class="fa fa-home"></i>  Home Page</a>
       </form></center>
     </div>
-    <div class="col-lg-5" style="padding-top:30px">
-      <span class="border border-primary">
+    <div class="col-lg-3" style="padding-top:30px">
+      
         <img src="{{ user_image }}" alt="User Image" class="img-thumbnail" style="width:250px;height:250px;float:right">
-      </span>
+    
     </div>
     <div class="col-lg-5 hello" style="padding-top:30px">
       <h4>Disease name is <mark style="background-color:#04aa6d;color:white;border-radius:5px">{{fruit}}</mark></h4>
