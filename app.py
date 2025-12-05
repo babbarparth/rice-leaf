@@ -12,7 +12,7 @@ import numpy as np
 # import matplotlib.pyplot as plt
 
 app = Flask(__name__)
-model_predict = load_model('custom_model95.h5')
+model_predict = load_model('/Users/parthbabbar/Downloads/rice-leaf/modelcustom1.h5')
 model_predict.compile(optimizer='adam',
                       loss='categorical_crossentropy',
                       metrics=['accuracy'])
